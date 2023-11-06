@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <style>
+    body {
+        width: 400px;
+        height: 300px;
+    }
+    
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      padding: 10px;
+      border: 1px solid black;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .completed {
+      text-decoration: line-through;
+      background-color: #f0f0f0;
+    }
+
+    #delete-completed {
+      margin-top: 10px;
+      cursor: pointer;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Task List</h1>
+  <input type="text" id="taskInput" placeholder="Add a new task">
+  <select id="taskPriority">
+    <option value="high">High</option>
+    <option value="medium">Medium</option>
+    <option value="low">Low</option>
+  </select>
+  <button id="addTask">Add Task</button>
+  <ul id="taskList"></ul>
+  <select id="taskSorting">
+    <option value="none">No Sorting</option>
+    <option value="priority">Sort by Priority</option>
+    <option value="completion">Sort by Completion</option>
+  </select>
+  <button id="delete-completed">Delete Tasks</button>
+  <script src="javascript.js"></script>
+</body>
+</html>
