@@ -1,1 +1,1 @@
-int x = get_string("Hello")
+int x = get_int("Hello")
