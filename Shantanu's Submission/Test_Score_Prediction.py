@@ -1,5 +1,6 @@
 import random
 
+# This is a basic linear regression model with training
 # Change this value to predict a test score for the number ofhours studied
 hours_studied = 10
 
