@@ -39,7 +39,7 @@ def predict_test_score(train_hours, train_scores, test_hours):
     test_scores = [min(score, 100) for score in test_scores]
     return test_scores
 
-# Predict test scores for test_hours_studied_this_week
+# Predict test scores for test_hours_studied
 test_hours_studied = [hours_studied]
 predicted_scores = predict_test_score(previous_study_hours, previous_exam_scores, test_hours_studied)
 print("Predicted test score for this week:", predicted_scores[0])
