@@ -14,4 +14,4 @@ Rules:
 2. Don't copy and paste any code from the internet
 3. It's okay to use the internet as a reference
 
-If you aren't coding this project, create a slideshow or a canva to present at next meeting. Make sure your idea can realistically be coded by someone of your skill level.
+Please make sure to create a slideshow/presentation to demonstrate and explain your code.
