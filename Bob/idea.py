@@ -1,2 +1,2 @@
 int x = get_int("Hello")
-## what the fuck are you doing bro
+## what the #### are you doing bro
