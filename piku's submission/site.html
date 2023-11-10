@@ -2,55 +2,11 @@
     <head>
         <title>researchhelper</title>
   
-        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-
-
+        <script type="module" src="https://pyscript.net/snapshots/2023.11.1/core.js"></script>
     </head>
     <body>
-        <h1> Plotting a graph </h1>
-        <div id="lineplot"> </div> 
-        <py-env>
-            - google-search-results
-            - serpapi
-            - pyOpenSSL
-        </py-env>
-        <py-script>  
-# API library
-# To get this to work, what I did was:
-# first use pip install serpapi or install it through ide whatever
-# then use pip3 install urllib3==1.26.6
-# then use pip install google-search-results or again, through ide if preferred
-import serpapi
-from OpenSSL import SSL
-
-# Search parameters where "q" is the search key-phrase,
-# "num" is the desired amount of search results,
-# "api_key" is, well, the api key
-resultNum = input("How many results? default is 100\n    ")
-if resultNum == "":
-    resultNum = "100"
-params = {
-    "q": input("Search topic?\n    "),
-    "num": resultNum,
-    "api_key": "624f19b460aa70e54a309edca59430ace68c658cb4f60fd49981a3d25e2191e0"
-}
-# Creating search variable
-search = serpapi.search(params)
-# Assigns dict of json result to results
-results = search.get_dict()
-# Creates variable for organic results section of results dictionary
-organicResults = results["organic_results"]
-# Wikipedia element search
-print("Wikipedia results on google:")
-for i in range(organicResults.index(organicResults[-1]) + 1):
-    if "wikipedia" in organicResults[i]["link"]:
-        print("    \"" + organicResults[i]["title"] + "\"")
-        print("    \"" + organicResults[i]["link"] + "\"")
-    i += 1
-# if "wikipedia" not in organicResults:
-#   print ("no wikipedia results in page 1 of search womp womp :c")
-                
-        </py-script>
+        <button py-click="main">do</button>
+        <div id="output"> </div> 
+        <script type="py" src="./main.py" config="./pyscript.json"></script>
     </body>
 </html>
