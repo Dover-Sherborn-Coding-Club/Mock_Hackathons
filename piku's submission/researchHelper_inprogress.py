@@ -1,4 +1,8 @@
 # API library
+# To get this to work, what I did was:
+# first use pip install serpapi or install it through ide whatever
+# then use pip3 install urllib3==1.26.6
+# then use pip install google-search-results or again, through ide if preferred
 from serpapi import GoogleSearch
 
 # Search parameters where "q" is the search key-phrase,
