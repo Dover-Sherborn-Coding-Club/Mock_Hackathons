@@ -1,3 +1,3 @@
 iutgyj = input("Enter a Ben: \n")
 
-print(iutgyi, "Good Job")
+print(iutgyj + " ," + "Good Job!")
