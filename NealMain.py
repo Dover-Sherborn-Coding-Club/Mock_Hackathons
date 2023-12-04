@@ -1,4 +1,4 @@
-import nltk     #Library imports
+import nltk     #Library import
 nltk.download('wordnet')
 nltk.download('punkt')
 from nltk.corpus import wordnet
