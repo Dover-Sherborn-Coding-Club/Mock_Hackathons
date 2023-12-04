@@ -1,3 +1,3 @@
-x = input("YA")
+x = input("YA:  \n")
 
 print(f"{x}")
